@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Alfa Slab One', serif;
+    font-weight: 400;
+    overflow-x:hidden;
+}
+.hero{
+    height: 100vh;
+}
+.hero_subtitle{
+    letter-spacing:4px;
+    opacity:0;
+    font-size: 1.5rem;
+}
+.hero_name
+{
+    position: absolute;
+    color: white;
+    font-size: 10rem;
+    transform: scaleY(1.8);
+    letter-spacing: 8px;
+    top: 30%;
+}
+.hero_section_img{
+    opacity:0;
+}
+
+.line{
+    position:absolute;
+    left:100px;
+    width:3px;
+    height:100%;
+    background:#000000;
+}
+.circle
+{
+    position: absolute;
+    left: 5.5%;
+    top: 45%;
+}
+.circle1
+{
+    position: absolute;
+    left: 5.5%;
+    top: 70%;
+}
+.circle img
+{
+    width: 40px;
+    height: 40px;
+}
+
+.timeline-item span{
+    margin-left:20px;
+    color:#777;
+    font-size:18px;
+}
+.timeContents
+{
+    height: auto;
+    margin-left: 10%;
+}
+.timeContentsImg
+{
+    border-radius: 90%;
+}
+.timeContentsh1
+{
+    font-size: 8rem;
+}
+.timeContentsp
+{
+    font-size: 1.3rem;
+}
