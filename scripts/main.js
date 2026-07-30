@@ -3,22 +3,22 @@ const tl = gsap.timeline();
 
 tl.fromTo(".hero_title",
     {
-        y:80,
+        y:0,
         opacity : 0
     },
     {
-        y : 200,
+        y : 30,
         opacity : 1,
-        duration : 1.1,
+        duration : 2,
         ease: "power2.out"
     },"-=0.6")
 tl.fromTo(".hero_subtitle",
     {
-      y : 80,
+      y : 10,
       opacity : 0  
     },
     {
-      y:70,
+      y:30,
       opacity : 1,
       duration : 1.1,
       ease: "power2.out"
@@ -34,12 +34,7 @@ tl.fromTo(".hero_subtitle",
       duration : 1.1,
       ease: "power2.out"
     },"-=0.4")
-    .fromTo(".hero_section_img",
-    {
-        opacity:0,
-        scale:0.7,
-        y:120 
-    },
+    .to(".hero_section_img",
     {
         opacity:0.99,
         scale:0.9,

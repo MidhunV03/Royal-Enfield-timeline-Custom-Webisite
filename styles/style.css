@@ -13,20 +13,28 @@ body{
 }
 .hero_subtitle{
     letter-spacing:4px;
-    opacity:0;
+    opacity:1;
+    top: 18%;
+    position: absolute;
     font-size: 1.5rem;
 }
+.hero_title{
+    color: #000000;
+    font-size: 4rem;
+    top: 5%;
+}
+
 .hero_name
 {
     position: absolute;
-    color: white;
-    font-size: 10rem;
     transform: scaleY(1.8);
     letter-spacing: 8px;
-    top: 30%;
+    top: 40%;
 }
 .hero_section_img{
+    position: absolute;
     opacity:0;
+    top: 20%;
 }
 
 .line{
@@ -109,4 +117,20 @@ body{
 .timeContentsp
 {
     font-size: 1.3rem;
+}
+
+@media screen and (max-width: 992px) {
+    .hero_title
+    {
+        top: 2%;
+        font-size: 3rem ;
+    }
+    .hero_name
+    {
+        width: 700px;
+    }
+    .hero_section_img
+    {
+        width: 400px;
+    }
 }
