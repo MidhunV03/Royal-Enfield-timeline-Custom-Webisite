@@ -7,7 +7,7 @@ tl.fromTo(".hero_title",
         opacity : 0
     },
     {
-        y : 50,
+        y : 200,
         opacity : 1,
         duration : 1.1,
         ease: "power2.out"
@@ -44,70 +44,123 @@ tl.fromTo(".hero_subtitle",
         opacity:0.99,
         scale:0.9,
         y:0,
+        opacity : 0.9,
         duration:1.5,
         ease:"power4.out"
     },"-=0.3")
+    
     .to(".hero_section_img",{
-        y : -2,
+        y : 5 ,
         repeat : -1,
         yoyo : true,
         ease : "sine.inOut"
     })
 
-const t2 =  gsap.timeline(
+
+
+gsap.utils.toArray(".toTrigger").forEach((section) => {
+
+    const times = gsap.timeline({
+        scrollTrigger: {
+            trigger: section,
+            start: "top 80%",
+            end: "+=600",      // Increase for slower animation
+            scrub: 1,           // Smooth scrubbing
+            markers: true
+        }
+    });
+
+    // Animate In
+    times.fromTo(
+        section.querySelector(".times-first"),
         {
-  scrollTrigger: {
-    trigger: ".time",  // The element that triggers the animation
-    start:"top 80%" ,
-   toggleActions: "play none none reverse", // Play on scroll down, reverse on scroll up back past start
-    // scrub:true
-}
-}
-);
+            y: 50,
+            opacity: 0
+        },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "power4.out"
+        }
+    )
+
+    .fromTo(
+        section.querySelector(".times-second"),
+        {
+            y: 50,
+            opacity: 0
+        },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "power4.out"
+        },
+        "-=0.5"
+    )
+
+    .fromTo(
+        section.querySelector(".times-third"),
+        {
+            y: 50,
+            opacity: 0
+        },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "power4.out"
+        },
+        "-=0.5"
+    )
+
+    .fromTo(
+        section.querySelector(".times-four"),
+        {
+            y: 50,
+            opacity: 0
+        },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "power4.out"
+        },
+        "-=0.5"
+    )
+    .fromTo(
+        section.querySelector(".timeline-path"),
+        {
+            y: 50,
+            opacity: 0
+        },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "power4.out"
+        },
+        "-=0.5"
+    )
+
+    // Stay visible for a while
+    .to({}, { duration: 1 })
 
 
-t2.fromTo(".historyText",
-    {
-        y:60,
-        opacity : 0
-    },
-    {
-        y:0,
-        opacity : 1,
-        duration : 1.1
-    }
-)
-.fromTo(".line",{
-        y:60,
-        opacity : 0
-    },
-    {
-        y:0,
-        opacity : 1,
-        duration : 1.1
-    },"-=0.5")
 
-.fromTo("#timeItems1",{
-        y:60,
-        opacity : 0
-    },
-    {
-        y:0,
-        opacity : 1,
-        duration : 1.1
-    },"-=0.5")
-.fromTo("#timeItems2",
-{
-    y:60,
-    opacity:0
-},
-{
-    y:0,
-    opacity:1,
-    duration:1.1,
-    scrollTrigger:{
-        trigger:"#timeItems2",
-        start:"top 80%",
-        toggleActions:"play none none reverse"
-    }
+});
+
+const bikeImg = document.querySelector(".hero_section_img");
+const audio = document.getElementById("bulletSound");
+
+bikeImg.addEventListener("mouseenter", () => {
+    audio.currentTime = 0;
+    console.log("ENtered")
+    audio.play();
+});
+
+bikeImg.addEventListener("mouseleave", () => {
+    audio.pause();
+    audio.currentTime = 0;
 });
