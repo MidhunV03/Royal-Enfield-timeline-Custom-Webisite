@@ -110,7 +110,32 @@ body{
     transform: rotate(10deg);
     height: fit-content;
 }
-
+.timeItems:nth-child(odd) .timeContentsImgCont:hover {
+    /* animation: turns 4s ease-in-out; */
+    transform: rotate(0deg);
+}
+.timeItems:nth-child(even) .timeContentsImgCont:hover {
+    /* animation: turns 4s ease-in-out; */
+    transform: rotate(0deg);
+}
+/* @keyframes turns{
+    0%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+} */
+/* .timeContentsImg
+{
+    transition: 1s ease;
+}
+.timeContentsImg:hover{
+    transform: scale(1.1);
+} */
 /* .timeline-path{
     position:absolute;
     width:100%;
@@ -190,12 +215,27 @@ body{
 }
 @media screen and (max-width: 768px) {
     
+    .historyText
+    {
+        margin-bottom: 120px;
+    }
     .timeContentsImgCont
     {
         width: 300px;
     }
+    .timeItems
+    {
+        margin-top: 100px;
+        margin-bottom:120px;
+    }
     .card-back-img
     {
         left:30%;
+    }   
+}
+@media screen and (max-width: 576px) {
+    .timeContentsImgCont
+    {
+        transform: rotate(0deg);
     }   
 }
