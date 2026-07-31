@@ -1,4 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(TextPlugin);
+AOS.init();
 const tl = gsap.timeline();
 
 tl.fromTo(".hero_title",
@@ -61,7 +63,7 @@ gsap.utils.toArray(".toTrigger").forEach((section) => {
             start: "top 80%",
             end: "+=600",      // Increase for slower animation
             scrub: 1,           // Smooth scrubbing
-            markers: true
+            // markers: true
         }
     });
 
@@ -158,4 +160,23 @@ bikeImg.addEventListener("mouseenter", () => {
 bikeImg.addEventListener("mouseleave", () => {
     audio.pause();
     audio.currentTime = 0;
+});
+gsap.to(".historyText",{
+    duration : 1.5,
+    text: "HISTORY OF ROYAL ENFIELD",
+    scrollTrigger:{
+        trigger : ".historyText",
+        start : "top 80%",
+        toggleActions : "play none none reverse"
+    }
+})
+gsap.to(".titless",{
+    duration:3,
+    text:"THE JOURNEY CONTINUES....",
+    scrollTrigger: {
+        trigger: ".titless",
+        start: "top 80%",
+        toggleActions: "play none none reverse",
+        // markers: true // remove later
+    }
 });

@@ -1,14 +1,15 @@
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    /* outline:1px solid red;   ? */
 }
 body{
-    font-family: 'Alfa Slab One', serif;
+    font-family: EB Garamond,serif;
     font-weight: 400;
     overflow-x:hidden;
 }
 .hero{
-    height: 100vh;  
+    height: 750px;  
     background-color: rgba(128, 128, 128, 0.525);
 }
 .hero_subtitle{
@@ -22,6 +23,7 @@ body{
     color: #000000;
     font-size: 4rem;
     top: 5%;
+    font-family: EB Garamond,serif;
 }
 
 .hero_name
@@ -34,9 +36,13 @@ body{
 .hero_section_img{
     position: absolute;
     opacity:0;
+    width: 650px;
     top: 20%;
 }
-
+.historyText
+{
+    font-family: EB Garamond,serif;
+}
 .line{
     position:absolute;
     /* left:100px; */
@@ -95,13 +101,16 @@ body{
 }
 .timeItems:nth-child(odd) .timeContentsImgCont {
     background-color: rgb(177, 168, 168);
+    height: fit-content;
     transform: rotate(-10deg);
 }
 
 .timeItems:nth-child(even) .timeContentsImgCont {
     background-color: rgb(177, 168, 168);
     transform: rotate(10deg);
+    height: fit-content;
 }
+
 /* .timeline-path{
     position:absolute;
     width:100%;
@@ -117,6 +126,45 @@ body{
 .timeContentsp
 {
     font-size: 1.3rem;
+    
+}
+.outer-card
+{
+    perspective: 1000px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height:320px;
+}
+.inner-card{
+    transform-style: preserve-3d;
+    position: relative;
+    transition:all 1s ease;
+    width: 100%;
+    height: 100%;
+}
+.card-flip-front , .card-flip-back
+{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-flip-back{
+    transform:rotateY(180deg)
+}
+.outer-card:hover .inner-card
+{
+    transform:rotateY(180deg) ;
+}
+.card-flip-front i{
+    color: rgb(177, 168, 168);;
+}
+.card-back-img{
+    width: 200px;
+    left: 25%;
+    filter: brightness(-1);
+    bottom: 20%;
+    opacity: 0.1;
 }
 
 @media screen and (max-width: 992px) {
@@ -131,6 +179,23 @@ body{
     }
     .hero_section_img
     {
-        width: 400px;
+        width: 500px;
     }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .card-back-img
+    {
+        left:6.5%;
+    }
+}
+@media screen and (max-width: 768px) {
+    
+    .timeContentsImgCont
+    {
+        width: 300px;
+    }
+    .card-back-img
+    {
+        left:30%;
+    }   
 }
