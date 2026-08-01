@@ -61,8 +61,8 @@ gsap.utils.toArray(".toTrigger").forEach((section) => {
         scrollTrigger: {
             trigger: section,
             start: "top 80%",
-            end: "+=600",      // Increase for slower animation
-            scrub: 1,           // Smooth scrubbing
+            end: "+=600",     
+            scrub: 1,          
             // markers: true
         }
     });
@@ -177,6 +177,59 @@ gsap.to(".titless",{
         trigger: ".titless",
         start: "top 80%",
         toggleActions: "play none none reverse",
-        // markers: true // remove later
     }
+});
+gsap.to(".engine-text",{
+    duration:3,
+    text:"ENGINES..",
+    scrollTrigger: {
+        trigger: ".titless",
+        start: "top 80%",
+        toggleActions: "play none none reverse",
+    }
+});
+gsap.from(".engineFirstCont",{
+    yPercent : 80,
+    opacity : 0,
+    scale:(1.4),
+    scrollTrigger : {
+        trigger : ".engineFirstCont",
+        start : "top bottom",
+        end : "center center",
+        scrub:true
+    }
+})
+gsap.from(".parallel-twin",{
+    yPercent : 80,
+    opacity : 0,
+    scale:(1.4),
+    scrollTrigger : {
+        trigger : ".parallel-twin",
+        start : "top bottom",
+        end : "center center",
+        scrub:true
+    }
+})
+gsap.to(".currentLineUp",{
+    duration:3,
+    text:"THE CURRENT LINEUP...",
+    scrollTrigger: {
+        trigger: ".currentLineUp",
+        start: "top 80%",
+        toggleActions: "play none none reverse",
+    }
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const elems = document.querySelectorAll(".carousel");
+
+    M.Carousel.init(elems, {
+        duration: 250,
+        dist: -150,
+        shift: 0,
+        padding: 80,
+        numVisible: 6,
+        fullWidth: false,
+        indicators: false,
+        noWrap: false
+    });
 });

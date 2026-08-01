@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Royal Enfield: The Legacy of Legends</title>
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     
@@ -41,9 +40,9 @@
         <h1 class="text-center historyText" ></h1>
     </div>
 <!-- MARGIN TOP IN MEDIA QUERY -->
-    <div class="time  position-relative my-5" > 
+    <div class="time d-flex flex-column justify-content-center  position-relative my-5" > 
         <div class="timeItems d-flex align-items-center " >
-            <div class="timeContents d-flex">
+            <div class="timeContents d-flex" style="width: fit-content;">
                 <div class="row  toTrigger">
                     <div class="col-sm-6 col-md-4 col-lg-3 times-second d-flex justify-content-center align-items-sm-center">
                         <div class="timeContentsImgCont p-3">
@@ -184,7 +183,7 @@
                                  Work commences on the construction of a purpose-built factory at Tiruvottiyur, near Madras.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 times-second  d-flex justify-content-center">
+                    <div class="col-sm-6 col-md-4 col-lg-3 times-second p-0  d-flex justify-content-center">
                         <div class="timeContentsImgCont p-3">
                             <img class="timeContentsImg img-fluid" src="	https://www.royalenfield.com/content/dam/royal-enfield-revamp/legacy-since-1901/1955.webp" alt="1901 img">    
                         </div>
@@ -229,6 +228,7 @@
                     </div>
                 </div>
             </div>
+        
             <div class="timeItems" >
                 <div class="timeContents toTrigger d-flex">
                     <div class="row">
@@ -259,7 +259,7 @@
                             </div>
                             <div class="col-sm-6 col-md-8 col-lg-3 times-second  d-flex justify-content-center align-items-sm-center">
                                 <div class="timeContentsImgCont p-3">
-                                    <img class="timeContentsImg img-fluid" src="	https://www.royalenfield.com/content/dam/royal-enfield-revamp/legacy-since-1901/2017-2.webp" alt="1901 img">    
+                                    <img class="timeContentsImg img-fluid" src="https://www.royalenfield.com/content/dam/royal-enfield-revamp/legacy-since-1901/2017-2.webp" alt="1901 img">    
                                 </div>
                             </div>
                             
@@ -267,10 +267,9 @@
                     </div>
                 </div>
         </div>
-        <div class="container">
-            <h1 class="titless text-center"></h1>
-        </div>
-        <div class="container  d-flex flex-column justify-content-center me-sm-0 me-md-auto" style="height: 700px;">
+
+        <div class="container journeyContainer  d-flex flex-column justify-content-evenly" >
+            <h1 class="titless my-5 text-center"></h1>
             <div class="row ">
                 <div class="col-sm-12 col-md-4 d-flex align-items-center " data-aos="fade-right" style="height: 350px;">
                     <div class="outer-card position-relative">
@@ -356,10 +355,10 @@
                 </div>
             </div>
         </div>
-        <h1 class="text-center ">ENGINES</h1>
         <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-6 border d-flex justify-content-center">
+            <h1 class="text-center engine-text"></h1>
+            <div class="row mb-5 engineFirstCont">
+                <div class="col-md-6 mb-3  d-flex justify-content-center">
                     <img class="img-fluid" src="./assests/UCE ENGINE/UCEUnit_Construction_Engine_or_UCE_was_the_succesor_of_the_standard_cast_iron_engine_that__royal-removebg-preview.png" alt="">
                 </div>
                 <div class="col-md-6 d-flex justify-content-evenly flex-column">
@@ -369,15 +368,161 @@
                         It powered legendary motorcycles such as the Classic 350, Classic 500, Bullet 350, Bullet 500, and Thunderbird, becoming the heart of Royal Enfield's global resurgence for more than a decade.</p>
                 </div>
             </div>
+            <div class="row engineFirstCont" >
+                <div class="col-md-6 d-flex justify-content-evenly flex-column">
+                    <h1 class="text-center ">J SERIES ENGINE</h1>
+                    <p class="fs-4">Introduced in 2021, the J-series engine represented the next major evolution in Royal Enfield's engineering journey. 
+                        Developed as an entirely new platform, the engine featured a refined SOHC architecture, an integrated gearbox, a counterbalancer shaft, and electronic fuel injection, delivering significantly smoother performance with reduced vibrations. 
+                        Available in 349cc form, it retained the brand's signature long-stroke character and unmistakable exhaust note while offering improved refinement, fuel efficiency, and reliability. 
+                        The J-series powers modern Royal Enfield motorcycles such as the Classic 350, Meteor 350, Hunter 350, Bullet 350, and Goan Classic 350, setting a new benchmark for everyday rideability while preserving the timeless Royal Enfield experience.</p>
+                </div>
+                <div class="col-md-6 mb-3  d-flex justify-content-center">
+                    <img class="img-fluid" src="./assests/UCE ENGINE/Meteor_350_Engine_2024-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="container my-5 parallel-twin"> 
+            <div class="row">
+                <div class="col-md-6 ">
+                     <video class="img-fluid" id="bikeVideo" style="border-radius: 10px;" width="100%" height="100%"  preload="auto" autoplay><source src="./assests/audio/Royal Enfield Continental GT 650 Twin 2021 _ A Ton Of Fun.mp4"   type="video/mp4"></video>
+                </div>
+                <div class="col-md-6 d-flex flex-column gap-5 fs-4">
+                    <h1>THE PARALLEL TWIN ENGINES</h1>
+                    <p>The Parallel Twin engine marked Royal Enfield's entry into the modern middleweight motorcycle segment.
+                         Introduced with the 650 Twin platform, it delivers smooth power, refined performance, and effortless long-distance touring while preserving the brand's iconic character and distinctive exhaust note.</p>
+                </div>
+            </div>
         </div>
 
+        <!-- <div class="container my-5">
+            <img src="https://www.royalenfield.com/content/dam/royal-enfield/bullet/colours/new-battalion-black/battalion-black-000.png" alt="">
+        </div> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/TextPlugin.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="./scripts/main.js"></script>
+<div class="carousel-container d-flex justify-content-center align-items-center" >
+    <div class="container">
+        <h1 class="text-center currentLineUp"></h1>
+        <div class="carousel center " data-aos="fade-down">
+            <div class="carousel-item d-flex flex-column">
+                <a>
+                    <img src="https://www.royalenfield.com/content/dam/royal-enfield/bullet/colours/new-battalion-black/battalion-black-000.png">
+                </a>
+                <h1 class="fs-1">BULLET 350</h1>
+                <p class="fs-4">A timeless classic built for smooth rides and unmatched heritage.</p>
+            </div>
+
+            <div class="carousel-item d-flex flex-column">
+                <a>
+                    <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/new-classic-350/studio-shots/360/medallion-bronze/01.png">
+                </a>
+                <h3 class="fs-1">CLASSIC 350</h3>
+                <p class="fs-4">Retro styling meets modern refinement for everyday adventures.</p>
+            </div>
+
+            <div class="carousel-item d-flex flex-column">
+                <a>
+                    <img src="	https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/meteor/hot-spot/hotspot.png">
+                </a>
+                <h3 class="fs-1">METEOR 350</h3>
+                <p class="fs-4">A relaxed cruiser designed for effortless long-distance touring.</p>
+            </div>
+
+            <div class="carousel-item d-flex flex-column">
+                <a>
+                    <img src="	https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/hunter/hotspot/hot-spot.png">
+                </a>
+                <h3 class="fs-1">HUNTER 350</h3>
+                <p class="fs-4">Lightweight, agile, and perfect for urban streets.</p>
+            </div>
+
+            <div class="carousel-item d-flex flex-column">
+                <a  href="#">
+                    <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/goan-classic-350/hotspot/hot-spot.png">
+                </a>
+                <h3 class="fs-1">GOAN CLASSIC 350</h3>
+                <p class="fs-4">A bobber-inspired motorcycle with a laid-back coastal spirit.</p>
+            </div>
+            <div class="carousel-item d-flex flex-column">
+                <a href="#">
+                    <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/himalayan-450/hotspot/hanle-black.png">
+                </a>
+                <h3 class="fs-1">HIMALAYAN 450</h3>
+                <p class="fs-4">An adventure tourer built to conquer every terrain.</p>
+            </div>
+            <div class="carousel-item d-flex flex-column">
+                <a  href="#">
+                    <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/new/hotspot/technical-specifications.png">
+                </a>
+                <h3 class="fs-1">GUERRILLA 450</h3>
+                <p class="fs-4">A dynamic roadster delivering spirited everyday performance.</p>
+            </div>
+            <div class="carousel-item d-flex flex-column">
+                <a href="#">
+                    <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/scram-440/hotspots/hotspots.png">
+                </a>
+                <h3 class="fs-1">SCRAM 440</h3>
+                <p class="fs-4">A versatile scrambler ready for city rides and rough roads.</p>
+            </div>
+            <div class="carousel-item d-flex flex-column">
+                <a  href="#">
+                    <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/classic-650/hotspot/hot-spot.png">
+                </a>
+                <h3 class="fs-1">CLASSIC 650</h3>
+                <p class="fs-4">The iconic Classic reborn with a refined twin-cylinder engine.</p>
+            </div>
+            <div class="carousel-item d-flex flex-column">
+                <a href="#">
+                    <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/bullet-650/hotspots/hotspot-banner.png">
+                </a>
+                <h3 class="fs-1">BULLET 650</h3>
+                <p class="fs-4">Traditional Bullet character with smooth parallel-twin performance.</p>
+            </div>
+            <div class="carousel-item d-flex flex-column">
+                <a  href="#">
+                    <img src="./assests/shotgun img.png">
+                </a>
+                <h3 class="fs-1">SHOTGUN 650</h3>
+                <p class="fs-4">A custom-inspired bobber designed for bold individuality.</p>
+            </div>
+            <div class="carousel-item d-flex flex-column">
+                <a href="#">
+                    <img src="https://www.royalenfield.com/content/dam/royal-enfield/india/motorcycles/continental-gt/new/colours/studio-shots/rocker-red/new/rocker_red_0000.png">
+                </a>
+                <h3 class="fs-1">CONTINENTAL GT 650</h3>
+                <p class="fs-4">A café racer blending vintage style with thrilling performance.</p>
+            </div>
+            <div class="carousel-item d-flex flex-column">
+                <a  href="#">
+                    <img src="https://www.royalenfield.com/content/dam/royal-enfield/india/motorcycles/interceptor/new/colours/studio-shots/canyon-red/canyon_red_000.png">
+                </a>
+                <h3 class="fs-1">INTERCEPTOR 650</h3>
+                <p class="fs-4">A versatile roadster offering comfort, power, and timeless design.</p>
+            </div>
+            <div class="carousel-item d-flex flex-column">
+                <a  href="#">
+                    <img src="./assests/shotgun_1-removebg-preview.png">
+                </a>
+                <h3 class="fs-1">BEAR 650</h3>
+                <p class="fs-4">A scrambler-inspired twin built for freedom beyond the pavement.</p>
+            </div>
+            <div class="carousel-item d-flex flex-column">
+                <a  href="#">
+                    <img src="https://www.royalenfield.com/content/dam/royal-enfield/super-meteor-650/motorcycles/colors/studio-shots/interstellar-grey/new/interstellar_grey_000.webp">
+                </a>
+                <h3 class="fs-1">SUPER METEOR 650</h3>
+                <p class="fs-4">A premium cruiser engineered for effortless highway journeys.</p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/TextPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="./scripts/main.js"></script>
 </body>
 </html>

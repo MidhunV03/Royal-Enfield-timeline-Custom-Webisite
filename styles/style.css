@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
-    /* outline:1px solid red;   ? */
+    outline:1px solid red;   
 }
 body{
     font-family: EB Garamond,serif;
@@ -191,7 +191,53 @@ body{
     bottom: 20%;
     opacity: 0.1;
 }
+.journeyContainer
+{
+    min-height: 650px;
+}
+.engine_1
+{
+    background-color: rgb(177, 168, 168);
+}
+#play_btn
+{
+    top: 40%;
+}
 
+.carousel {
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+
+.carousel .carousel-item {
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .4s ease;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    user-select: none;
+    pointer-events: none;
+}
+
+
+.carousel .carousel-item.active {
+    transform: scale(1.1);
+}
+
+.carousel-container {
+    min-height: 100vh;
+}
 @media screen and (max-width: 992px) {
     .hero_title
     {
