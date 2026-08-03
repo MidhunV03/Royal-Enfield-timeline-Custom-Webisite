@@ -1,9 +1,10 @@
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(TextPlugin);
+gsap.registerPlugin(ScrollTrigger); //Scroll Trigger Plugin
+gsap.registerPlugin(TextPlugin); //Text Plugin
 AOS.init();
-const tl = gsap.timeline();
+const tl = gsap.timeline(); //TimeLine to Group animation
 
-tl.fromTo(".hero_title",
+//FOr Hero Section
+tl.fromTo(".hero_title", 
     {
         y:0,
         opacity : 0
@@ -54,7 +55,7 @@ tl.fromTo(".hero_subtitle",
     })
 
 
-
+//For ALL HISTORY
 gsap.utils.toArray(".toTrigger").forEach((section) => {
 
     const times = gsap.timeline({
@@ -144,6 +145,7 @@ gsap.utils.toArray(".toTrigger").forEach((section) => {
     // Stay visible for a while
     .to({}, { duration: 1 })
 });
+//TEXT PLUGIN
 gsap.to(".historyText",{
     duration : 1.5,
     text: "HISTORY OF ROYAL ENFIELD",
@@ -202,6 +204,7 @@ gsap.to(".currentLineUp",{
         toggleActions: "play none none reverse",
     }
 });
+//Materialize Carousel
 document.addEventListener("DOMContentLoaded", function () {
     const elems = document.querySelectorAll(".carousel");
 
