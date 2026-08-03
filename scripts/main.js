@@ -143,23 +143,6 @@ gsap.utils.toArray(".toTrigger").forEach((section) => {
 
     // Stay visible for a while
     .to({}, { duration: 1 })
-
-
-
-});
-
-const bikeImg = document.querySelector(".hero_section_img");
-const audio = document.getElementById("bulletSound");
-
-bikeImg.addEventListener("mouseenter", () => {
-    audio.currentTime = 0;
-    console.log("ENtered")
-    audio.play();
-});
-
-bikeImg.addEventListener("mouseleave", () => {
-    audio.pause();
-    audio.currentTime = 0;
 });
 gsap.to(".historyText",{
     duration : 1.5,
@@ -189,9 +172,9 @@ gsap.to(".engine-text",{
     }
 });
 gsap.from(".engineFirstCont",{
-    yPercent : 80,
+    yPercent : 30,
     opacity : 0,
-    scale:(1.4),
+    scale:(1),
     scrollTrigger : {
         trigger : ".engineFirstCont",
         start : "top bottom",
@@ -200,9 +183,9 @@ gsap.from(".engineFirstCont",{
     }
 })
 gsap.from(".parallel-twin",{
-    yPercent : 80,
+    yPercent : 30,
     opacity : 0,
-    scale:(1.4),
+    scale:(1),
     scrollTrigger : {
         trigger : ".parallel-twin",
         start : "top bottom",
