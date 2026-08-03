@@ -380,3 +380,10 @@ body{
 
     }
 }
+@media screen and (max-width: 262px)
+{
+    .hero_title
+    {
+        font-size: 25px;
+    }
+}
